@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -25,10 +24,11 @@ for i in range(1, 6):
     if cond:
         conditions.append(cond.strip())
 
-condition_data = pd.read_csv("/mnt/data/Expanded_Condition-Terpene_Mapping_with_Confidence_Levels.csv")
+# ✅ Corrected CSV paths (just filenames)
+condition_data = pd.read_csv("Expanded_Condition-Terpene_Mapping_with_Confidence_Levels.csv")
 condition_data["Helpful_Terpenes"] = condition_data["Helpful_Terpenes"].apply(eval)
 condition_data["Avoid_Terpenes"] = condition_data["Avoid_Terpenes"].apply(eval)
-mental_health_data = pd.read_csv("/mnt/data/Mental_Health_Conditions_and_Terpene_Effects.csv")
+mental_health_data = pd.read_csv("Mental_Health_Conditions_and_Terpene_Effects.csv")
 
 strain_data = pd.DataFrame({
     "Strain": [
