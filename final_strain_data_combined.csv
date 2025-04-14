@@ -1,0 +1,4 @@
+strain,terpenes,trust_score,verified_in_CT
+Blue Dream,"['Myrcene', 'Caryophyllene']",80,False
+Sour Diesel,"['Limonene', 'Pinene']",75,False
+Girl Scout Cookies,"['Linalool', 'Caryophyllene']",78,False
